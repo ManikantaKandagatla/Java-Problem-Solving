@@ -23,30 +23,6 @@ public class Heap
         this.size = 0;
     }
 
-    public static void main(String[] args) {
-        int operations;
-        Scanner in = new Scanner(System.in);
-        operations = in.nextInt();
-        System.out.println("Operations: "+ operations);
-        Heap solution = new Heap();
-        int element;
-        for(int i=0;i< operations;i++)
-        {
-            int choice = in.nextInt();
-            switch(choice)
-            {
-               case 1:
-                  element = in.nextInt();
-                  solution.insert(element); break;
-               case 2:
-                   element = in.nextInt();
-                   boolean success = solution.delete(element,0); 
-                   break;
-               case 3: System.out.println(solution.heapArray.get(0)); break;
-            }
-        }
-    }
-
     public int[] getChildren(int index)
     {
         int[] children = { -1, -1 };
@@ -138,5 +114,33 @@ public class Heap
         if (success == false && children[1] != -1 && heapArray.get(children[0]) > element)
             success = delete(element, children[0]);
         return success;
+    }
+
+    public static void main(String[] args)
+    {
+        int operations;
+        Scanner in = new Scanner(System.in);
+        operations = in.nextInt();
+        System.out.println("Operations: " + operations);
+        Heap solution = new Heap();
+        int element;
+        for (int i = 0; i < operations; i++)
+        {
+            int choice = in.nextInt();
+            switch (choice)
+            {
+                case 1:
+                    element = in.nextInt();
+                    solution.insert(element);
+                    break;
+                case 2:
+                    element = in.nextInt();
+                    boolean success = solution.delete(element, 0);
+                    break;
+                case 3:
+                    System.out.println(solution.heapArray.get(0));
+                    break;
+            }
+        }
     }
 }

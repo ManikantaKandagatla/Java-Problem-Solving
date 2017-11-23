@@ -167,7 +167,7 @@ class MinHeap
     }
 }
 
-public class HuffmanCoding
+public class HuffmanEncoding
 {
     public static Scanner in = new Scanner(System.in);
 
@@ -186,12 +186,12 @@ public class HuffmanCoding
 
     public static void main(String args[])
     {
-         String str = "abcdefghi";
-         int [] frequency = {12,3,45,67,19,5,34,22,1};
+        String str = "abcdefghi";
+        int[] frequency = { 12, 3, 45, 67, 19, 5, 34, 22, 1 };
         // System.out.println("Enter a string:");
         // str = in.next();
-        //String str = "abcdef";
-        //int frequency[] = { 5, 9, 12, 13, 16, 45 };
+        // String str = "abcdef";
+        // int frequency[] = { 5, 9, 12, 13, 16, 45 };
         MinHeap minHeap = new MinHeap(9);
         for (int i = 0; i < str.length(); i++)
         {
