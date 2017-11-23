@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * @author mk186084
+ * @author ManiKanta Kandagatla
  * @version $Id: $
  */
 
