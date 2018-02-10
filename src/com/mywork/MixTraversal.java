@@ -8,7 +8,7 @@ import java.util.Queue;
  * @version $Id: $
  */
 
-public class MixTraversal extends BST
+public class MixTraversal extends BinaryTree
 {
     int depth;
 
@@ -92,7 +92,7 @@ public class MixTraversal extends BST
         {
             newNode = in.nextInt();
             Node node = new Node(newNode);
-            root = preorderLevelOrder.insert(root, node);
+            root = preorderLevelOrder.bstInsert(root, node);
         }
         preorderLevelOrder.inorder(root);
         
