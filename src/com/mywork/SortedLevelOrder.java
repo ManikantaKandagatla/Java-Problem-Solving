@@ -2,9 +2,6 @@ package com.mywork;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.TreeSet;;
 
 /**
@@ -69,14 +66,6 @@ public class SortedLevelOrder extends BinaryTree
                 currentLevel.addAll(nextLevel);
             }
             System.out.println("");
-        }
-    }
-
-    private void printSortedQueue(TreeSet<Node> q)
-    {
-        for (Node node : q)
-        {
-            System.out.print("" + node.value + ",");
         }
     }
 
