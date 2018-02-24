@@ -10,10 +10,6 @@ import java.util.TreeSet;
  */
 public class FormMaxNumber
 {
-    public String[][] testCases = { { "1234", "123", "1234", "5" },
-            { "986", "9", "978", "98", "5000", "70", "986" }, { "", "12", "1" },
-            { "9878", "98", "98986", "67", "678", "34", "345" } };
-
     /**
      * Function returns max number formed by arranging array of numbers lexographically decreasing
      * 
@@ -43,17 +39,26 @@ public class FormMaxNumber
         }
         return maxNumber;
     }
-
-    public static void main(String[] args)
+    
+    public static void runTestCases()
     {
+        String[][] testCases = { { "1234", "123", "1234", "5" },
+                { "986", "9", "978", "98", "5000", "70", "986" }, { "", "12", "1" },
+                { "9878", "98", "98986", "67", "678", "34", "345" } };
+        
         FormMaxNumber formMaxNumberObj = new FormMaxNumber();
-        for (int i = 0; i < formMaxNumberObj.testCases.length; i++)
+        for (int i = 0; i < testCases.length; i++)
         {
             System.out.println("################################################");
-            System.out.println("Input : " + Arrays.toString(formMaxNumberObj.testCases[i]));
+            System.out.println("Input : " + Arrays.toString(testCases[i]));
             System.out.println("Max number formed: "
-                    + formMaxNumberObj.prepareMaxNumber(formMaxNumberObj.testCases[i]) + "\n");
+                    + formMaxNumberObj.prepareMaxNumber(testCases[i]) + "\n");
         }
+    }
+    
+    public static void main(String[] args)
+    {
+        runTestCases();
     }
 
 }
