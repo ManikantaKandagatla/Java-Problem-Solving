@@ -1,8 +1,3 @@
-/*
- * Copyright (C) 2018 by Teradata Corporation.
- * All Rights Reserved.
- * TERADATA CORPORATION CONFIDENTIAL AND TRADE SECRET
- */
 package com.mywork;
 
 import java.util.ArrayList;
