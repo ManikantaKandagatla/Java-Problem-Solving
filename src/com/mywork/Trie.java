@@ -2,7 +2,6 @@ package com.mywork;
 
 /**
  * @author ManiKanta Kandagatla
- * @version $Id: $
  */
 public class Trie
 {
@@ -26,7 +25,7 @@ public class Trie
             char ch = s.charAt(i);
             if (temp.getChildren().get(ch) == null)
             {
-                temp.getChildren().put(ch, new TrieNode());
+                temp.getChildren().put(ch, new TrieNode(s.substring(0,i+1)));
             }
             temp = temp.getChildren().get(ch);
         }

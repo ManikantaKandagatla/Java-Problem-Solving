@@ -81,7 +81,7 @@ public class MaxFrequentWord extends Trie
 
         for (int index = 0; index < testCases.length; index++)
         {
-            TrieNode root = new TrieNode();
+            TrieNode root = new TrieNode("");
             for (int j = 0; j < testCases[index].length; j++)
             {
                 root = insertTrieNode(root, testCases[index][j]);

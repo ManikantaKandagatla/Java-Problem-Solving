@@ -14,11 +14,11 @@ public class TrieNode
     
     private int count;
     
-    public TrieNode()
+    public TrieNode(String key)
     {
         this.count = 0;
         this.children = new HashMap<Character,TrieNode>();
-        this.key = null;
+        this.key = key;
         this.meaning = null;
     }
 
