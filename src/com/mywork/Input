@@ -1,0 +1,15 @@
+[employee] 
+name=john 
+age=30 
+salary=100 
+[address] 
+houseno=221b 
+street=bakerstreet 
+[location] 
+place=xyz 
+state=abc 
+country=123 
+[/location] 
+[/address] 
+designation = srDeveloper 
+[/employee] 
